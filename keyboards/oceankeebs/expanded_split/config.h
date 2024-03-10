@@ -1,0 +1,27 @@
+#pragma once
+
+/*
+ * Feature disable options
+ *  These options are also useful to firmware size reduction.
+ */
+
+/* disable debug print */
+//#define NO_DEBUG
+
+/* disable print */
+//#define NO_PRINT
+
+/* disable action features */
+//#define NO_ACTION_LAYER
+//#define NO_ACTION_TAPPING
+//#define NO_ACTION_ONESHOT
+
+
+#define PORT_EXPANDER0_ADDRESS 0x20
+#define PORT_EXPANDER1_ADDRESS 0x21
+
+// Not yet available in `info.json`
+#ifdef OLED_ENABLE
+#    define OLED_DISPLAY_128X64
+#endif
+
